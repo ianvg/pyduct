@@ -17,13 +17,18 @@ class Connector:
     pressure_drop: Optional[float] = None
 
     def calculate_velocity(self) -> float:
+        print(f"Calculating velocity with flowrate={self.flowrate} and area={self.area}")
         self.velocity = calc_velocity(self.flowrate, self.area)
+        print(f"Calculated velocity: {self.velocity}")
 
     def calculate_pressure_drop(self, area: float, dzeta: float) -> None:
         """
         Calculate the pressure drop at the connector interface.
         """
+        print(f"Calculating pressure drop with area={area}, dzeta={dzeta}")
         self.area = area
         self.dzeta = dzeta
         self.calculate_velocity()
+        print(f"Velocity calculated: {self.velocity}")  # Check velocity
         self.pressure_drop = local_pressure_drop(self.dzeta, self.velocity)
+        print(f"Pressure drop calculated: {self.pressure_drop}")  # Check the pressure drop value
