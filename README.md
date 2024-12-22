@@ -1,11 +1,13 @@
 ## Note!
 This project is a branch of the work done by @Tokarzewski in the project pyduct.
 
-## pyduct
-
-Work in progress python library for ductwork calculations. The purpose of this branch is to work on developing a basic GUI and fleshing out some of the fittings data, to be more comprehensive.
+The purpose of this branch is to work on developing a basic GUI and fleshing out some of the fittings data, to be more comprehensive.
 
 In addition, I am interested in crossing over functionality and data from imperial units, so this database is useful for international and American engineers.
+
+## pyduct
+
+Work in progress python library for ductwork calculations.
 
 ### What this can do?
 
