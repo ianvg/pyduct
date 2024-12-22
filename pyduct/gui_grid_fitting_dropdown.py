@@ -95,6 +95,11 @@ def calculate():
         else:
             dzeta = 0.4  # For now, assign a default dzeta value for other fitting types
         
+        # # Get the selected fitting type and its dzeta value
+        # fitting_name = fitting_var.get()  # Get the selected fitting type name
+        # fitting = next(fitting for fitting in fitting_types if fitting.name == fitting_name)  # Find the fitting object
+        # dzeta = fitting.dzeta  # Get dzeta value for the selected fitting type
+        
         # Example of using the Connector class
         
         # Create Connector instance
